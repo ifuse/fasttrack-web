@@ -66,7 +66,7 @@ export default {
   watch: {
     type: {
       deep: true,
-      handler: function (newVal) {
+      handler: function(newVal) {
         switch (newVal) {
           case "bar":
             this.defaultOption.push(["series[0].type", "bar"])
@@ -78,7 +78,7 @@ export default {
           default:
             break
         }
-        return this.defaultOption        
+        return this.defaultOption
       }
     }
   },

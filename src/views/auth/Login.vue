@@ -24,15 +24,6 @@
       </v-form>
     </v-card-text>
     <div class="login-btn">
-      <v-btn icon>
-        <v-icon color="blue">fa fa-facebook-square fa-lg</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon color="red">fa fa-google fa-lg</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon color="light-blue">fa fa-twitter fa-lg</v-icon>
-      </v-btn>
       <v-spacer></v-spacer>
       <v-btn block color="primary" @click="login" :loading="loading">Login</v-btn>
     </div>
@@ -44,7 +35,7 @@ export default {
   data: () => ({
     loading: false,
     model: {
-      username: "admin@isocked.com",
+      username: "Email",
       password: "password"
     }
   }),
