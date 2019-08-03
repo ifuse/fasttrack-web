@@ -8,8 +8,8 @@
       <v-form>
         <v-text-field
           append-icon="person"
-          name="login"
-          label="Login"
+          name="users"
+          label="User"
           type="text"
           v-model="model.username"
         ></v-text-field>

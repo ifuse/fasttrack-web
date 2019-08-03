@@ -4,18 +4,19 @@ import { publicRoute, protectedRoute } from "./config"
 import NProgress from "nprogress"
 import "nprogress/nprogress.css"
 const routes = publicRoute.concat(protectedRoute)
-
+import AuthGuard from './auth-guard'
 Vue.use(Router)
 const router = new Router({
-        mode: "hash",
+        mode: "history",
         linkActiveClass: "active",
         routes: routes
     })
     // router gards
 router.beforeEach((to, from, next) => {
     NProgress.start()
-        //auth route is authenticated
-    next()
+    redirect: "/auth/login",
+
+        next()
 })
 
 router.afterEach((to, from) => {

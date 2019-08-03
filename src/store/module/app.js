@@ -21,7 +21,7 @@ const app = {
     fixedHeader: false,
     fixSiderbar: false,
     autoHideHeader: false,
-    color: "indigo",
+    color: "purple",
     weak: false,
     multiTab: true
   },

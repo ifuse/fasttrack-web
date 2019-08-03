@@ -80,5 +80,6 @@ export default {
   left: 0;
   content: "";
   z-index: 0;
+  background-image: url("statics/bg.png");
 }
 </style>
